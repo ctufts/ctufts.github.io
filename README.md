@@ -1,2 +1,0 @@
-# ctufts.github.io
-blog
