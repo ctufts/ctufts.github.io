@@ -16,7 +16,7 @@ I am currently working on the [Countable Care Challenge](http://www.drivendata.o
 
 To demonstrate how random.forest.importance can be implemented, I used the <i>SAheart</i> dataset<sup>1</sup> available in the [ElemStatLearn package](http://cran.r-project.org/web/packages/ElemStatLearn/index.html).  The <i>SAheart</i> disease dataset is a retrospective sample of males in a heart-disease high-risk region of the Western Cape, South Africa. Patients positive for coronary heart disease, <i>chd</i>, are labeled with a value of 1 and patients negative for coranary heart disease are labeled with a value of zero. 
 
-{% highlight ruby %}
+{% highlight r %}
 > library(ElemStatLearn)
 > library(FSelector)
 
@@ -32,7 +32,7 @@ sbp tobacco  ldl adiposity famhist typea obesity alcohol age chd
 
 The <i>random.forest.importance</i> function is used to rate the importance of each feature in the classification of the outcome, <i>chd</i>.  The function returns a data frame containing the name of each attribute and the importance value based on the mean decrease in accuracy.  
 
-{% highlight ruby %}
+{% highlight r %}
 > SAheart$chd <- as.factor(SAheart$chd)
 > att.scores <- random.forest.importance(chd ~ ., SAheart)
           attr_importance
@@ -49,7 +49,7 @@ age             22.236682
 
 The FSelector package offers several functions to choose the best features using the importance values returned by <i>random.forest.importance</i>.  The <i>cutoff.biggest.diff</i> function automatically identifies the features which have a significantly higher importance value than other features. <i>cutoff.k</i> provides the <i>k</i> features with the highest importance values.  Similarly, <i>cutoff.k.percent</i> returns <i>k</i> percent of the features with the highest importance values.  
 
-{% highlight ruby %}
+{% highlight r %}
 > cutoff.biggest.diff(att.scores)
 [1] "age"     "tobacco"
 > cutoff.k(att.scores, k = 4)
