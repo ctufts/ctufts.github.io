@@ -7,7 +7,7 @@ modified: 2015-04-15T12:00:38
 # Online Books (Free)
 * [An Introduction to Statistical Learning with Applications in R](http://www-bcf.usc.edu/~gareth/ISL/) by Gareth James, Daniela Witten, Trevor Hastie and Robert Tibshirani
 * [Advanced R](http://adv-r.had.co.nz/) by Hadley Wickham
-* [Statistics: Methods and Application](http://www.statsoft.com/textbook/)
+* [Statistics: Methods and Application](http://www.statsoft.com/textbook/) by Hill, T. & Lewicki
 
 # Web Resources
 * [Setosa Visualizations](http://setosa.io/#/) - complex ideas explained simply with interactive visualizations
