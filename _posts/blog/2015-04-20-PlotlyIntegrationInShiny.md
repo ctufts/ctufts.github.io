@@ -4,9 +4,9 @@ author: Chris_Tufts
 share:  true
 title: "Embedding Plotly Charts into a Shiny App"
 modified:
-categories: blog
+categories: blog r
 excerpt:
-tags: []
+tags: [R, Shiny, Plotly]
 image:
   feature:
 date: 2015-04-20 ##T19:39:55-04:00

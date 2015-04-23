@@ -1,7 +1,7 @@
 ---
 layout: page
 title: About Mining the Details
-excerpt: "So Simple is a responsive Jekyll theme for your words and images."
+excerpt: "techniques and tricks to help accomplish signal processing/data mining/machine learning tasks"
 modified: 2015-04-10T12:00:38
 image:
 #  feature: so-simple-sample-image-4.jpg

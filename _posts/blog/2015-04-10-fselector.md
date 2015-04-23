@@ -4,9 +4,9 @@ author: Chris_Tufts
 share:  true
 title: "Feature Selection with FSelector Package"
 modified:
-categories: blog
+categories: blog r
 excerpt:
-tags: [R]
+tags: [R, feature selection]
 image:
   feature:
 date: 2015-04-07 ##T15:39:55-04:00

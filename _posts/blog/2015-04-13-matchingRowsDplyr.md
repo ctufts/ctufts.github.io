@@ -4,9 +4,9 @@ author: Chris_Tufts
 share:  true
 title: "Identifying Non-Matching Rows Between Data Frames Using Dplyr"
 modified:
-categories: blog
+categories: blog r
 excerpt:
-tags: []
+tags: [R, dplyr]
 image:
   feature:
 date: 2015-04-13 ##T19:39:55-04:00
