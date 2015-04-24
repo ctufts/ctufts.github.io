@@ -10,6 +10,7 @@ tags: [R, Shiny, Plotly]
 image:
   feature:
 date: 2015-04-20 ##T19:39:55-04:00
+redirect_from: /blog/r/PlotlyIntegrationInShiny/
 permalink: /blog/PlotlyIntegrationInShiny/
 ---
 
