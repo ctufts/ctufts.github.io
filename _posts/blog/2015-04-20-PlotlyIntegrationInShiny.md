@@ -10,6 +10,7 @@ tags: [R, Shiny, Plotly]
 image:
   feature:
 date: 2015-04-20 ##T19:39:55-04:00
+permalink: /blog/PlotlyIntegrationInShiny/
 ---
 
 Last week I attended a couple of data science talks at the [DataPhilly](http://www.meetup.com/DataPhilly/) meetup.  One of the presenters was Matt Sundquist from [Plotly](https://plot.ly/api/).  He gave an overview of some of the capabilities and features of Plotly.  During the talk, Matt mentioned that Plotly visualizations can be embedded into a [Shiny](http://shiny.rstudio.com/) application.  Shiny is a web application framework available in RStudio which allows you to create web applications using only R.  
