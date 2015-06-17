@@ -16,12 +16,17 @@ permalink: /blog/PlotlyIntegrationInShiny/
 
 Last week I attended a couple of data science talks at the [DataPhilly](http://www.meetup.com/DataPhilly/) meetup.  One of the presenters was Matt Sundquist from [Plotly](https://plot.ly/api/).  He gave an overview of some of the capabilities and features of Plotly.  During the talk, Matt mentioned that Plotly visualizations can be embedded into a [Shiny](http://shiny.rstudio.com/) application.  Shiny is a web application framework available in RStudio which allows you to create web applications using only R.  
 
-A while back I made a Shiny app as an exercise to learn about the framework using the [heart disease data set](https://archive.ics.uci.edu/ml/datasets/Heart+Disease) in the UCI repository. The app uses K-nearest neighbors to classify the presence or absence of heart disease given several features. I decided to alter the app using Plotly graphs in place of the [ggplot2](http://cran.r-project.org/web/packages/ggplot2/index.html) graphs in the original app.  You can try both apps out and get the code at the links below:
+A while back I made a Shiny app as an exercise to learn about the framework using the [heart disease data set](https://archive.ics.uci.edu/ml/datasets/Heart+Disease) in the UCI repository. The app uses K-nearest neighbors to classify the presence or absence of heart disease given several features. I decided to alter the app using Plotly graphs in place of the [ggplot2](http://cran.r-project.org/web/packages/ggplot2/index.html) graphs in the original app. You can try both apps out and get the code at the links below.  The graphs can be found by clicking the <i>Visualize Features</i> tab in the app.  (NOTE: The apps are embedded below for convenience and may appear somewhat compressed. For the best visability you may want to view the app in a separate window by clicking the provided links)
 
 * [KNN Heart Disease App](http://miningthedetails.shinyapps.io/knn-dashboard-shiny)
   * [KNN Heart Disease GitHub](https://github.com/ctufts/knn-dashboard-shiny)
+
+<iframe src="http://miningthedetails.shinyapps.io/knn-dashboard-shiny" width = "100%" height = "600px" ></iframe>
+
 * [KNN Heart Disease App with Plotly](http://miningthedetails.shinyapps.io/knn-dashboard-shiny-plotly)
   * [KNN Heart Disease with Plotly GitHub](https://github.com/ctufts/knn-dashboard-shiny-plotly)
+
+<iframe src="http://miningthedetails.shinyapps.io/knn-dashboard-shiny-plotly" width = "100%" height = "600px" ></iframe>
 
 # Overview of the Shiny App Layout
 The apps contains 4 tabs: 
