@@ -28,7 +28,7 @@ tw <- twListToDF(userTimeline('511PAPhilly',n=3200))
 {% endhighlight %}
 NOTE: For more info on how to gain twitter API access for you keys, tokens, etc. check out this post by [Dave Tang](http://davetang.org/muse/2013/04/06/using-the-r_twitter-package/)
 
-There is one drawback about the Twitter API; it only allows for the most recent 3200 tweets from a user to be accessed via the API.  This left me with data dating back about a month and a half.  I wanted to build a [Shiny app](http://shiny.rstudio.com/) to show the most recent breakdown of traffic incidents, so I had to find a solution for getting realtime updates.  The simplest solution I found was using [IFFT](https://ifttt.com/) to save each tweet from 511 to a file in Google Drive. (Thanks for the idea [Lauren Ancona](https://twitter.com/laurenancona)) 
+There is one drawback about the Twitter API; it only allows for the most recent 3200 tweets from a user to be accessed via the API.  This left me with data dating back about a month and a half.  I wanted to build a [Shiny app](http://shiny.rstudio.com/) to show the most recent breakdown of traffic incidents, so I had to find a solution for getting realtime updates.  The simplest solution I found was using [IFTTT](https://ifttt.com/) to save each tweet from 511 to a file in Google Drive. (Thanks for the idea [Lauren Ancona](https://twitter.com/laurenancona)) 
 
 Once the data was retrieved, I needed a way to access it from Google Drive.  I found a [great post by Timothy Lau](http://statisticalthoughts.blogspot.com/2014/12/pulling-live-snapshots-of-data-from.html) which explained how to import data from Google Drive using the [repmis package](http://cran.r-project.org/web/packages/repmis/index.html).
 
