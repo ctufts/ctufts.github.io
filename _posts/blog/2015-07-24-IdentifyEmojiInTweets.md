@@ -68,13 +68,13 @@ We found the most frequently used emoji were:
 
 <iframe src="http://laurenancona.github.io/twimoji/#/6" width="100%" height="600px"></iframe> 
 
-Although the focus of this post was identifying the frequency of emoji use in tweets, I figured I'd end with some great visualizations of the data we collected. Lauren made some amazing maps showing the tweet locations over time: 
+Although the focus of this post was identifying the frequency of emoji use in tweets, I figured I'd end with some great visualizations of the data we collected. Lauren made some amazing maps showing all the tweet locations over time: 
 
-<iframe src="http://laurenancona.github.io/twimoji/#/3" width="100%" height="600px"></iframe> 
+<iframe src="http://laurenancona.github.io/twimoji/web/all-tweets.html" width="100%" height="600px"></iframe> 
 
-As well as a heat map showing tweet density over time:
+As well as a heat map showing tweet density over time for tweets containing emoji:
 
-<iframe src="http://laurenancona.github.io/twimoji/#/7" width="100%" height="600px"></iframe> 
+<iframe src="http://laurenancona.github.io/twimoji/web/emoji-tweets.html" width="100%" height="600px"></iframe> 
 
 Please feel free to check out the [slides](http://laurenancona.github.io/twimoji/#/) from our presentation as well as the [git repo](https://github.com/laurenancona/twimoji) containing the project. 
 
