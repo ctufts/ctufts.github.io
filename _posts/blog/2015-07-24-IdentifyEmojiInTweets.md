@@ -13,7 +13,7 @@ date: 2015-07-24 ##T19:39:55-04:00
 
 ---
 
-I recently had the oppurtunity to do a [lightning talk](https://blog.rjmetrics.com/2015/07/22/heres-what-went-down-at-phillys-first-annual-data-jawn/) at the first annual [Data Jawn](http://rjmetrics.ticketleap.com/data-jawn/details) event hosted by [RJ Metrics](https://rjmetrics.com/).  Myself and [Lauren Ancona](https://twitter.com/laurenancona) presented a small project we had been working on.  We collected tweets geolocated in the Philadelphia area for a couple of months and decided to look at emoji use in tweets.  
+I recently had the oppurtunity to do a [lightning talk](https://blog.rjmetrics.com/2015/07/22/heres-what-went-down-at-phillys-first-annual-data-jawn/) at the first annual [Data Jawn](http://rjmetrics.ticketleap.com/data-jawn/details) event hosted by [RJ Metrics](https://rjmetrics.com/).  Myself and [Lauren Ancona](https://twitter.com/laurenancona) presented a small project we had been working on known as Twimoji.  We collected tweets geolocated in the Philadelphia area for a couple of months and decided to look at emoji use in tweets.  
 
 My first contribution to the project was to isolate the emojis in each tweet and determine the number of tweets which used each emoji.  The tweets were collected using IFTTT and saved in a series of csv files. The tweet files are imported followed by a copy of Tim Whitlock's [Emoji Unicode Tables](http://apps.timwhitlock.info/emoji) labeled as <i>emoticon_conversion_noGraphic.csv</i> in the code below.   
 
