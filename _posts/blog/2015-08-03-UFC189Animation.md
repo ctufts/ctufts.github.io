@@ -13,7 +13,7 @@ date: 2015-08-03 ##T19:39:55-04:00
 
 ---
 
-I've been on a kick lately of learning how to collect, process, and analyze data collected from Twitter.  I'm an MMA fight fan, so I decided to set up a stream from the Twitter API on Saturday July 11th during UFC 189.  The data I'll be using throughout the rest of this blog post focuses on the end of Rory MacDonald vs. Robbie Lawler fight, rounds 4-5, and the complete Chad Mendes vs. Conor McGregor bout.  The end result of the analysis is an animation along the timeline of the fights showing tweet counts per minute, the most frequently tweeted words, and major moments during the event.     
+I've been on a kick lately of learning how to collect, process, and analyze data collected from Twitter.  I'm an MMA fight fan, so I decided to [set up a stream from the Twitter API](http://miningthedetails.com/blog/python/TwitterStreamsPythonMySQL/) on Saturday July 11th during UFC 189.  The data I'll be using throughout the rest of this blog post focuses on the end of Rory MacDonald vs. Robbie Lawler fight, rounds 4-5, and the complete Chad Mendes vs. Conor McGregor bout.  The end result of the analysis is an animation along the timeline of the fights showing tweet counts per minute, the most frequently tweeted words, and major moments during the event.     
 
 # Overview of the Data
 
