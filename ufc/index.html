@@ -9,8 +9,8 @@
   <meta charset="UTF-8">
 	<title>Page Title</title>
 <!--     <link rel="stylesheet" href="https://storage.googleapis.com/code.getmdl.io/1.0.0/material.grey-lime.min.css" /> -->
-<!--     <link rel="stylesheet" href="https://storage.googleapis.com/code.getmdl.io/1.0.0/material.grey-deep_orange.min.css" /> -->
-	  <link rel="stylesheet" href="https://storage.googleapis.com/code.getmdl.io/1.0.0/material.blue_grey-red.min.css" />
+     <link rel="stylesheet" href="https://storage.googleapis.com/code.getmdl.io/1.0.0/material.grey-deep_orange.min.css" />
+<!--	  <link rel="stylesheet" href="https://storage.googleapis.com/code.getmdl.io/1.0.0/material.blue_grey-red.min.css" />-->
     <script src="https://storage.googleapis.com/code.getmdl.io/1.0.0/material.min.js"></script>
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Montserrat:300,400,500,700" rel="stylesheet" type="text/css">
@@ -24,13 +24,24 @@
 
 </head>
 <body>
-    <style>
-        main {margin-left: 150px;margin-top:20px;}
-        .nob {list-style-type: none}
-        body {color: #686868; }
-        /*div {padding-bottom: 10px;}*/
-    </style>
-    <!-- Uses a header that scrolls with the text, rather than staying
+  <!-- Google Tag Manager -->
+  <noscript><iframe src="//www.googletagmanager.com/ns.html?id=GTM-P92ZSS"
+  height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+  <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+  '//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+  })(window,document,'script','dataLayer','GTM-P92ZSS');</script>
+  <!-- End Google Tag Manager -->
+
+  <style> /* these should be moved to main.css */
+      main {min-width:900px;margin-top:20px;}
+      body {color: #686868; }
+      /*div {padding-bottom: 10px;}*/
+      #kibana-components {max-width:900px;}
+  </style>
+
+  <!-- Uses a header that scrolls with the text, rather than staying
   locked at the top -->
     <div class="mdl-layout mdl-js-layout mdl-layout--overlay-drawer-button">
       <header class="mdl-layout__header mdl-layout__header--scroll">
@@ -43,7 +54,7 @@
           <nav class="mdl-navigation">
             <a class="mdl-navigation__link"></a>
             <div>
-                <button id="authorize-button" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent">Authorize</button>
+              <a class="mdl-navigation__link" href="http://www.link-to-something.html" />Optional Links</a>
             </div>
           </nav>
         </div>
@@ -53,13 +64,13 @@
         <span class="mdl-layout-title">Page Title</span>
         <nav class="mdl-navigation">
       <!-- ADD MORE LINKS HERE-->
-            <a class="mdl-navigation__link" href="https://analyticsacademy.withgoogle.com/course05/preview">Learn GTM</a>
+              <a class="mdl-navigation__link" href="http://www.link-to-something.html" />Optional Links to things</a>
         </nav>
       </div>
       <!-- MAIN CONTENT -->
       <main class="mdl-layout__content">
         <div class="page-content">
-          <div class="mdl-grid" id="kibana-components">
+          <div class="mdl-grid" id="kibana-components" max-width="900px">
             <div class="mdl-cell mdl-cell--6-col" id="map-chart">
               <h3>Chart info (optional)</h3>
               <!-- Add iframe embed for chart 1 here-->
