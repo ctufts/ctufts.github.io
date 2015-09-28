@@ -1,13 +1,16 @@
 # Site navigation links
 
-- title: About
-  url: /about/
-
 - title: Blog
   url: /blog/
 
+- title: Shiny Apps
+  url: /shinyapps/
+
 - title: Resources
   url: /resources/
+
+- title: About
+  url: /about/
 
 - title: Search
   url: /search/

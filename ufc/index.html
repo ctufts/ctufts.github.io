@@ -74,10 +74,12 @@
             <div class="mdl-cell mdl-cell--6-col" id="map-chart">
               <h3>Chart info (optional)</h3>
               <!-- Add iframe embed for chart 1 here-->
+              <iframe src="http://104.236.235.58:5601/#/visualize/edit/top-english-words?embed&_a=(filters:!(),linked:!f,query:(query_string:(analyze_wildcard:!t,query:'*')),vis:(aggs:!((id:'3',params:(field:text.english,order:desc,orderBy:'2',size:15),schema:segment,type:terms),(id:'2',params:(),schema:metric,type:count)),listeners:(),params:(addLegend:!t,addTimeMarker:!f,addTooltip:!t,defaultYExtents:!f,mode:stacked,scale:linear,setYExtents:!f,shareYAxis:!t,spyPerPage:10,times:!(),yAxis:()),type:histogram))&_g=()" height="600" width="800"></iframe>
             </div>
             <div class="mdl-cell mdl-cell--6-col" id="histogram">
               <h3>Chart info (optional)</h3>
               <!-- Add iframe embed for chart 2 here-->
+              <iframe src="http://104.236.235.58:5601/#/visualize/edit/tweet-count-histogram?embed&_g=()&_a=(filters:!(),linked:!f,query:(query_string:(analyze_wildcard:!t,query:'*')),vis:(aggs:!((id:'1',params:(),schema:metric,type:count),(id:'2',params:(customInterval:'2h',extended_bounds:(),field:'@timestamp',interval:auto,min_doc_count:1),schema:segment,type:date_histogram)),listeners:(),params:(addLegend:!t,addTimeMarker:!f,addTooltip:!t,defaultYExtents:!f,mode:stacked,scale:linear,setYExtents:!f,shareYAxis:!t,times:!(),yAxis:()),type:histogram))" height="600" width="800"></iframe>
             </div>
             <div class="mdl-cell mdl-cell--12-col" id="data-table">
               <h3>Chart info (optional)</h3>
