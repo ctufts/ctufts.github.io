@@ -5,7 +5,7 @@ share:  true
 title: "UFC 189: A Twitter Stream Animation"
 modified:
 categories: blog r
-excerpt:
+excerpt: ""
 tags: [rstats, wordcloud, ggplot2, animate]
 image:
   feature: wc_animation.gif

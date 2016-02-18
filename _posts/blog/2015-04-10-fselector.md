@@ -5,7 +5,7 @@ share:  true
 title: "Feature Selection with FSelector Package"
 modified:
 categories: blog r
-excerpt:
+excerpt: ""
 tags: [R, feature selection]
 image:
   feature:

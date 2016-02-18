@@ -5,7 +5,7 @@ share:  true
 title: "Getting Set Up for Mapping in R"
 modified:
 categories: blog R
-excerpt:
+excerpt: ""
 tags: [R, RStudio, Maps, Philly]
 image:
   feature: PhillyMap.png

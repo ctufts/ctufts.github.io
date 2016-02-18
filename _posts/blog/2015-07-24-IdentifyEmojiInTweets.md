@@ -5,7 +5,7 @@ share:  true
 title: "Twimoji: Identifying Emoji in Tweets"
 modified:
 categories: blog r
-excerpt:
+excerpt: ""
 tags: [R, rstats, emoji, Twitter]
 image:
   feature: EmojiTitlePic.png

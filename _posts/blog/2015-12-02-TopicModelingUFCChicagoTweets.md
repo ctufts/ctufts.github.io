@@ -5,7 +5,7 @@ share:  true
 title: "Topic Modeling of UFC Chicago Tweets"
 modified:
 categories: blog python
-excerpt:
+excerpt: ""
 tags: [python, lda, topicmodel, nlp]
 link: http://nbviewer.ipython.org/github/ctufts/UFC-Chicago-Topic-Modeling/blob/master/UFC-Chicago.ipynb
 image:

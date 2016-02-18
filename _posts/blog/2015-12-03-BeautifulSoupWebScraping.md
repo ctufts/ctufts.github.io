@@ -5,7 +5,7 @@ share:  true
 title: "Web Scraping with Beautiful Soup"
 modified:
 categories: blog python
-excerpt:
+excerpt: ""
 tags: [Python, webscraping, UFC, Sherdog, beautifulsoup]
 image:
   

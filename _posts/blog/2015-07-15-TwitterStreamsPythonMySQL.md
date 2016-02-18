@@ -5,7 +5,7 @@ share:  true
 title: "Streaming Twitter to MySQL using Python"
 modified:
 categories: blog python
-excerpt:
+excerpt: ""
 tags: [Python, MySQL, Twitter]
 image:
   

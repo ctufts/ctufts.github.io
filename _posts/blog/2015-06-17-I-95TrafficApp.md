@@ -5,7 +5,7 @@ share:  true
 title: "I-95 Traffic Incident Frequency Analysis"
 modified:
 categories: blog r
-excerpt:
+excerpt: ""
 tags: [R, Philadelphia, 511, Shiny, Twitter, nlp]
 image:
   feature: Weekday_95Incidents.png

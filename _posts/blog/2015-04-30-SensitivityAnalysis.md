@@ -5,7 +5,7 @@ share:  true
 title: "Model Sensitivity Analysis"
 modified:
 categories: blog r
-excerpt:
+excerpt: ""
 tags: [R, sensitivity analysis]
 image:
   feature: sensitivityAnalysis_V6to8.png

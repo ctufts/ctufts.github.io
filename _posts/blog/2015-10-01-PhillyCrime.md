@@ -5,7 +5,7 @@ share:  true
 title: "Visualizing Philadelphia Crime Data"
 modified:
 categories: blog r
-excerpt:
+excerpt: ""
 tags: [rstats, leaflet, Philly, shiny]
 image:
   feature: PhillyMap.png

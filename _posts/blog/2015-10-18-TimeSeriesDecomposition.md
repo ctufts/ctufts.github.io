@@ -5,7 +5,7 @@ share:  true
 title: "Time Series Decomposition with Moving Averages"
 modified:
 categories: blog r
-excerpt:
+excerpt: ""
 tags: [rstats, timeseries]
 image:
   feature: Trend_RobberyFirearm_TitlePane.png
