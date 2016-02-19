@@ -73,6 +73,8 @@ From this point forward follow the installation instructions provided on the pag
 
 Run the installer with the default options.  For additional references on installation check out the [FAQ's](https://www.rstudio.com/resources/faqs/) and the [RStudio community support forum](https://support.rstudio.com/hc/en-us/community/topics). 
 
+NOTE: You do not need to link R and RStudio, this will happen during the installation if the default settings for installation of R and RStudio are used.  
+
 # Installing Packages
 R comes with a base set of packages, but we will be using a few addditional packages for to aid in creating maps. A package is essentially a set of software tools built to accomplish specific tasks, in this case the packages will aid us in mapping. To install the packages, first open RStudio.  You will see a screen similar to the one below.
 
@@ -98,6 +100,8 @@ install.packages(map.packages)
 
 Then press <i>enter</i>. Depending on your OS, you may be asked "Do you want to install from sources the packages which need compilation?
 y/n:". Just respond with 'y' then press <i>enter</i>. 
+
+Once you are finished with installing the packages, you can quit R/RStudio by either typing <i>quit()</i> in the terminal or by closing the RStudio window. 
 
 Now that R, RStudio, and the required packages are installed you are ready to go for the meetup.  Look forward to seeing you there. 
 
