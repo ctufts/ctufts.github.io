@@ -2,11 +2,11 @@
 
 title: Mining the Details
 locale: en_US
-description: 
+description:
 logo:
 search: true
-#url: http://localhost:4000
-url: http://miningthedetails.com
+url: http://localhost:4000
+#url: http://miningthedetails.com
 
 # Jekyll configuration
 
@@ -52,5 +52,5 @@ owner:
     analytics:
     verify:
     ad-client:
-    ad-slot: 
+    ad-slot:
   bing-verify:
