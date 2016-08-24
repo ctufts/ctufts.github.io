@@ -6,7 +6,7 @@ title: "What's the difference? : An Overview of Non-Parametric Tests"
 modified:
 categories: blog r
 excerpt: ""
-tags: [non-parametric, feature selection, broom]
+tags: [ rstats , broom]
 link:
 image:
 date: 2016-08-23 ##T19:39:55-04:00
