@@ -2,40 +2,31 @@
 layout: post
 author: Chris_Tufts
 share:  true
-title: "Table Template for Rmarkdown"
+title: "Table of Images: HTML Template for Rmarkdown"
 modified:
 categories: blog r
 excerpt: ""
 tags: [R, html, markdown]
 image:
-  feature:
-date: 2016-08-31 ##T15:39:55-04:00
+  feature: html_tables_post/single_row.png
+date: 2016-11-06 ##T15:39:55-04:00
 ---
 
-# Tables in Rmarkdown
-The other day I needed a template to create a table of images in an Rmarkdown document.
+# HTML Tables in Rmarkdown
+The other day I needed a template to create a <b>table of images</b> in an Rmarkdown document.
 I found a few stack overflow posts, but nothing that really addressed this issue, so I wanted to document the template I came up with in a short post.  
+
+ To clarify: I had a large number of images, not generated in the Rmd, that had to be displayed. If you are interested in displaying your plots generated in the Rmd, this approach is overkill.  Instead you may want to take a look at this [post by Karl Broman](http://kbroman.org/knitr_knutshell/pages/figs_tables.html).
 
 # HTML in Rmarkdown
 
-
-
-
-
 A few things to know before getting started:
 
-1. <b>[Pandoc interprets material between HTML block tags as Markdown](http://rmarkdown.rstudio.com/html_document_format.html).</b> To circumvent these issues a markdown extension needs to be specified in the [YAML](https://github.com/rstudio/rmarkdown/issues/326) portion of the Rmd document.  
-  * [Additional reference for HTML/Pandoc](http://rmarkdown.rstudio.com/authoring_pandoc_markdown.html#raw-html)
+1. <b>[Pandoc interprets material between HTML block tags as Markdown](http://rmarkdown.rstudio.com/html_document_format.html).</b> To circumvent these issues a markdown extension needs to be specified in the [YAML](https://github.com/rstudio/rmarkdown/issues/326) portion of the Rmd document. (Check out this [RStudio reference about HTML/Pandoc](http://rmarkdown.rstudio.com/authoring_pandoc_markdown.html#raw-html) for more details)
 2. <b>results='asis'</b> : In the example I'll go through I'll be generating HTML code for the table.  In order to use this HTML the chunk needs to print out the results 'as is'.
 3. <b>Be aware of how knitr deals with file paths.</b> The example I provide uses a relative path to the Rmd file.  You have the option of setting an [alternate root directory for knitr to use](https://github.com/yihui/knitr/issues/277) as well.
 
-Show what happens when md_extensions: -markdown_in_html_blocks is included and isn't included (fails to convert html correctly
-
-Talk a bit about extensions? At least include links to help with circumventing strange pandoc behaviour
-
-Make sure to over automated import, same as what you did with the word clouds
-
-# Template/example
+# Template
 
 ## YAML
 Below is the YAML portion of the Rmd file. I provide a document title, set the output type as <i>html_document</i>, and specify that I don't want markdown in between my HTML blocks. This will ensure the tables I create will render correctly and not just as HTML text.  To learn more about the <i>md_extensions</i> check out this [page.](http://rmarkdown.rstudio.com/authoring_pandoc_markdown.html#raw-html)
@@ -61,7 +52,6 @@ total 8
 ./doc:
 total 3640
    8 -rw-r--r--@ 1 tufts  staff     1436 Aug 31 19:29 ImageTableTemplate.Rmd
-3632 -rw-r--r--@ 1 tufts  staff  1859146 Aug 31 19:29 ImageTableTemplate.html
    0 drwxr-xr-x@ 2 tufts  staff       68 Aug 31 19:30 figures
 
 ./doc/figures:
@@ -90,6 +80,11 @@ for(i in 1:n){
 {% endhighlight %}
 
 # Create the HTML Document
+
+Below is the code chunk for generating the HTML table of images in the Rmd file.  
+For each of the <i>figures</i> subdirectories a single table is made. Each row
+of the table contains 4 columns containing an image in each cell. Each table is
+3 rows (3 rows, 4 columns, 12 cells total).
 
 {% highlight R %}
 ```{r  echo=F ,results='asis' }
@@ -122,13 +117,6 @@ if(length(plots > 0)){
 
 ```
 {% endhighlight %}
-
-
-
-
-
-
-
 
 
 Below is the resulting directory structure after knitting the Rmd document to HTML.
@@ -210,6 +198,20 @@ total 488
 40 -rw-r--r--@ 1 tufts  staff  19262 Aug 31 19:48 plot_47.png
 48 -rw-r--r--@ 1 tufts  staff  21050 Aug 31 19:48 plot_48.png
 {% endhighlight %}
+
+Below is an example of one of the tables. The complete document can be seen
+by clicking on the image below.
+
+<a href="{{ site.url}}/images/html_tables_post/ImageTableTemplate.html" > <img src="/images/html_tables_post/html_table_example.png" alt="image"
+ style="border:2px solid black" > </a>
+
+# A Final Note
+This template will only work for creating HTML documents.  HTML tables won't be
+rendered correctly into PDF via Pandoc (or maybe I should say I haven't figured
+out how to do this in an easily reproducable fashion).  That being said, I'll be following
+up this post with a template for creating a table of images using LaTeX in RMarkdown.
+
+A copy of the template can be found in this [repo](https://github.com/ctufts/HTML-Image-Tables-RMarkdown).
 
 [jekyll-gh]: https://github.com/jekyll/jekyll
 [jekyll]:    http://jekyllrb.com
