@@ -6,7 +6,7 @@ title: "Table of Images: HTML Template for Rmarkdown"
 modified:
 categories: blog r
 excerpt: ""
-tags: [R, html, markdown]
+tags: [rstats, html, markdown]
 image:
   feature: html_tables_post/single_row.png
 date: 2016-11-06 ##T15:39:55-04:00
