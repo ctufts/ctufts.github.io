@@ -5,15 +5,21 @@ modified: 2016-11-02T12:00:38
 ---
 
 
-## [Probability Primer]({{ site.url}}/images/zines/probability_primer.pdf)
+<h2 id="ProbPrimer">
+  <a href="{{ site.url}}/images/zines/probability_primer.pdf" >
+  Probability Primer</a>
+</h2>
 
 <a href="{{ site.url}}/images/zines/probability_primer.pdf" > <img src="/images/probability_primer.png" alt="image"
  style="border:2px solid black" > </a>
 
-## [Inference: An Overview of ML and MAP Approaches]({{ site.url}}/images/zines/inference.pdf)
+<h2 id="Inference">
+  <a href="{{ site.url}}/images/zines/inference.pdf" >Inference: An Overview of ML and MAP Approaches</a>
+</h2>
 
  <a href="{{ site.url}}/images/zines/inference.pdf" > <img src="/images/inference.png" alt="image"
   style="border:2px solid black" > </a>
+
 
   * References/additional info referenced in the inference notes:
     * [Dave Robinson's Post on Beta Distribution](http://varianceexplained.org/statistics/beta_distribution_and_baseball/)
