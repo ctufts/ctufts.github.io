@@ -24,8 +24,8 @@ applications in statistics, machine learning, etc.  I won't dive into those righ
 but, in upcoming posts it will be referenced often.
 
 # Symbols & Formulas
-&mu; - Pronunciation: "mu" , Definition: Population Mean<br />
-X&#772; - Pronunciation: "X hat", Definition: Sample Mean
+&mu; - Symbol Name (Greek Letter): Mu , Parameter Name: Population Mean<br />
+X&#772; - Pronunciation: "X hat", Statistic Name: Sample Mean
 
 Population Mean<br/>
 <span>
