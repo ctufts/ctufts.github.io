@@ -19,8 +19,10 @@ all this I've slowly been working through [Python the Hard Way]() to help fill i
 the gaps of things I've never learned (or at least never used) in Python. I highly
 recommend it. That being said, I was working through some of the exercises for
 OOP and unit tests and realized now would be a great opportunity to make a program
-which simulates [John Kruschke's 'Traveling Politician' example](Add link to book and add another to Duke) of the Metropolis
-Hastings Algorithm.  
+which simulates [John Kruschke's 'Traveling Politician' example](https://www.amazon.com/Doing-Bayesian-Data-Analysis-Second/dp/0124058884/ref=sr_1_1?s=instant-video&ie=UTF8&qid=1487790073&sr=8-1&keywords=doing+bayesian+analysis) of the Metropolis Hastings Algorithm.
+
+[Duke Computational Statistics in Python Example of Metropolis Hastings](http://people.duke.edu/~ccc14/sta-663-2016/16A_MCMC.html) 
+
 
 I also happen to be a huge fan of the show <i>The Wire</i>. So to make this a
 bit more enjoyable, the politician in my example is non other than Clay
@@ -72,7 +74,7 @@ Daniels and the rest of the squad don't catch him.
 
 # Code/How it works, go through it
 You can find the code here. Clone it, run it and see the outcome. The two
-branches are a 'generic version' and 'the wire' version. 
+branches are a 'generic version' and 'the wire' version.
 
 
 [jekyll-gh]: https://github.com/jekyll/jekyll

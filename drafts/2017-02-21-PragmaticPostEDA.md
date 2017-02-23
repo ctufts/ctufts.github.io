@@ -2,7 +2,7 @@
 layout: post
 author: Chris_Tufts
 share:  true
-title: "Pragmatic Stats: Standard Deviation"
+title: "Pragmatic Stats: Exploratory Data Analysis - The Basics"
 modified:
 categories: blog r python pragmatic stats
 excerpt: ""
@@ -11,57 +11,40 @@ image:
   feature:
 date: 2017-02-21 ##T15:39:55-04:00
 ---
-
+<!--  This post will cover how to get an 'idea' of what your data looks like
+  will contain the mean/median/standard deviation/variance and introduce
+  histograms and scatter plots(?). Short blurb on tools for plotting.
+-->
 # What is it?
-The standard deviation provides a measure of variability in a sample or population.
-It is the average distance, or deviation, a point in a population (sample) is
-from the population (sample) mean.  The standard deviation is the square root of
-the variance which means it is the same units of measurement as the data.  This
-give a more interpretable picture of the spread of the data than the variance.
-
-NOTE: Anytime I list 'population (sample)' this just means it can apply to a
-[sample or a population](http://stats.stackexchange.com/questions/269/what-is-the-difference-between-a-population-and-a-sample#answer-416).  
+Exploratory data analysis (EDA) is the process of reviewing your data to
+get a sense of what you are dealing with. You will often need to look at
+both statistics derived from your data in conjuction with visualizations.
 
 # What is it used for?
-The standard deviation gives us a sense of the 'spread' of our data. It can be used in
-conjunction with the [median](http://miningthedetails.com/blog/r/python/pragmatic/stats/PragmaticPostMedian/) and [mean](http://miningthedetails.com/blog/r/python/pragmatic/stats/PragmaticPostMean/) to gain a full view of the structure of data.
+It is often the first step in solving any data related problem. You need to know
+what you are dealing with before you can propose a plan on how to attack (regardless
+  of application - prediction, correlation, ANOVA, etc.)
 
-Standard deviation is also a building block for [z-scores](https://en.wikipedia.org/wiki/Standard_score) which provide a
-metric to compare variability in samples from different populations. Z-scores
-can also be used for calculating the probability of randomly selecting a sample
-with a specific value from a population. I will go into further detail in future
-posts.
+It is used to answer the following:
+
+* What is the range of my data?
+* Where is my data centered?
+* How spread out is my data?
+* What distribution is my data from?
 
 
-# Symbols & Formulas
-&sigma; - Symbol Name (Greek Letter): Sigma (squared),
-  Parameter Name: Population Variance<br/>
-s - Statistic Name: Sample Variance
+# Terminology
 
-Formulas:<br />
-<b>Population Variance</b><br/>
-<span>
-$$
-\begin{equation}
-\sigma = \sqrt{\Sigma(X-\mu)^2 \over N}
-\end{equation}
-$$
-</span><br/>
-<b>Sample Variance</b><br/>
-<span>
-$$
-\begin{equation}
-s = \sqrt{\Sigma(X-\bar{X})^2 \over (n-1)}
-\end{equation}
-$$
-</span>
+* Histogram: Bar chart that has multiple equal sized bins (intervals) on the
+x-axis which represents the range of data values. The y-axis is the frequency, or
+count, of the number of samples in a specific range.
 
-n - number of scores in a sample<br />
-N - number of scores in a population<br />
-X - individual score in a population<br/>
-&mu; - Population Mean<br />
-X&#772; - Sample Mean
+* Scatter Plot: Plot used to plot dependent (y-axis) and independent variable (x-axis).
+ 
 
+* Range : The maximum and minimum values of your data.
+  * Example: Sample of Heights for 5 men = [60, 66, 75, 77, 70]</br>
+  Range - [60,77]
 
 # When Should I Use This?
 
