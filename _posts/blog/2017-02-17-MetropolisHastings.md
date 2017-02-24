@@ -110,7 +110,7 @@ Metropolis Hastings... and of course he will have something to say.
 
 A few more steps:
 
-![Clay Davis Step Through](/images/clay_davis.gif)
+![Clay Davis Step Through](/images/clay_davis/clay_davis.gif)
 
 If you decide to stop following Clay step by step, the simulation will
 run through the remaining 5000 iterations and you will see a histogram
@@ -118,7 +118,7 @@ showing the frequencies (scaled to fit the command line) the Baltimore
 spots were visited along with the relative frequencies assigned to the
 spots at the start of the program.
 
-![End Result](/images/Simulation_end.png)
+![End Result](/images/clay_davis/Simulation_end.png)
 
 ## Gist and Github Repos
 You can run an example of this by grabbing the code from this gist:
