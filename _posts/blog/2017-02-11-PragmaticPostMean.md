@@ -4,9 +4,9 @@ author: Chris_Tufts
 share:  true
 title: "Pragmatic Stats: Mean"
 modified:
-categories: blog r python pragmatic stats
+categories: blog pragmaticstats
 excerpt: ""
-tags: [pragmaticstats]
+tags: [pragmaticstats r python]
 image:
   feature: prag_mean/mean_1024_256.svg
 date: 2017-02-11 ##T15:39:55-04:00

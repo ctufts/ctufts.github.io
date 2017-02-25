@@ -4,9 +4,9 @@ author: Chris_Tufts
 share:  true
 title: "Pragmatic Stats: Standard Deviation"
 modified:
-categories: blog r python pragmatic stats
+categories: blog pragmaticstats
 excerpt: ""
-tags: [pragmaticstats]
+tags: [pragmaticstats r python]
 image:
   feature:
 date: 2017-02-21 ##T15:39:55-04:00
