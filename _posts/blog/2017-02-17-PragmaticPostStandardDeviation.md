@@ -67,7 +67,7 @@ X&#772; - Sample Mean
 
 #### Use:
 It should be used to 'get a sense of your data', in particular the spread of
-your data. It is also one of the parameters used to describe a [normal distribution](http://stattrek.com/probability-distributions/normal.aspx)
+your data. It is also one of the parameters of the [normal distribution](http://stattrek.com/probability-distributions/normal.aspx)
 along with the mean.
 
 #### Don't Use:
@@ -85,11 +85,10 @@ post](http://stats.stackexchange.com/questions/51237/population-variance-and-sam
 
 # Example - No Code
 
-<!-- ![Variance example title page](/images/variance/variance_title.jpeg)
+![Standard Deviation Page 1 and 2](/images/stdev/slides1_2.png)
 
-![Variance example page 1](/images/variance/Variance_pg1.jpg)
+![Standard Deviation Page 3 and 4](/images/stdev/slides3_4.png)
 
-![Variance example page 2](/images/variance/Variance_pg2.jpg) -->
 
 # Example - Code
 
