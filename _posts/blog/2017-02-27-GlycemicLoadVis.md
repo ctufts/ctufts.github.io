@@ -6,7 +6,7 @@ title: "Data Vis: Glycemic Load of Common Foods"
 modified:
 categories: blog d3
 excerpt: ""
-tags: [d3, diabetes]
+tags: [d3js, diabetes]
 link: http://bl.ocks.org/ctufts/raw/81678c30eaa5cff0d86b0a65c3e29a0e/
 image:
   feature: d3/glycemic_index.jpeg
