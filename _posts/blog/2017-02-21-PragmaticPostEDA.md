@@ -6,7 +6,7 @@ title: "Pragmatic Stats: Exploratory Data Analysis - Visualizations"
 modified:
 categories: blog pragmaticstats
 excerpt: ""
-tags: [pragmaticstats r python]
+tags: [pragmaticstats, r, python]
 image:
   feature: pragmatic_stats_eda/scatter_plot.svg
 date: 2017-02-25 ##T15:39:55-04:00

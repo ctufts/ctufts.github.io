@@ -6,7 +6,7 @@ title: "Pragmatic Stats: Standard Deviation"
 modified:
 categories: blog pragmaticstats
 excerpt: ""
-tags: [pragmaticstats r python]
+tags: [pragmaticstats, r, python]
 image:
   feature:
 date: 2017-02-21 ##T15:39:55-04:00

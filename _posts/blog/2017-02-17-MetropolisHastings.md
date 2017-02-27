@@ -6,7 +6,7 @@ title: "Metropolis Hastings and the Traveling Politician: Clay Davis Edition"
 modified:
 categories: blog python
 excerpt: ""
-tags: [python mcmc thewire]
+tags: [python, mcmc, thewire]
 image:
   feature: metropolis_hastings/clay-davis-the-wire.jpg
 date: 2017-02-17 ##T15:39:55-04:00

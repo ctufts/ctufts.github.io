@@ -6,7 +6,7 @@ title: "Pragmatic Stats: Mean"
 modified:
 categories: blog pragmaticstats
 excerpt: ""
-tags: [pragmaticstats r python]
+tags: [pragmaticstats, r, python]
 image:
   feature: prag_mean/mean_1024_256.svg
 date: 2017-02-11 ##T15:39:55-04:00
