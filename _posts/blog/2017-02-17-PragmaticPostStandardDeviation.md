@@ -34,12 +34,12 @@ posts.
 
 
 # Symbols & Formulas
-&sigma; - Symbol Name (Greek Letter): Sigma (squared),
-  Parameter Name: Population Variance<br/>
-s - Statistic Name: Sample Variance
+&sigma; - Symbol Name (Greek Letter): Sigma,
+  Parameter Name: Population Standard Deviation<br/>
+s - Statistic Name: Sample Standard Deviation
 
 Formulas:<br />
-<b>Population Variance</b><br/>
+<b>Population Standard Deviation</b><br/>
 <span>
 $$
 \begin{equation}
@@ -47,7 +47,7 @@ $$
 \end{equation}
 $$
 </span><br/>
-<b>Sample Variance</b><br/>
+<b>Sample Standard Deviation</b><br/>
 <span>
 $$
 \begin{equation}
@@ -103,7 +103,7 @@ Using statistics library
 0.7888106377466155
 {% endhighlight %}
 
-Using sample variance formula
+Using sample standard deviation formula
 {% highlight python %}
 import statistics
 import math
