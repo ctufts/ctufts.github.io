@@ -2,11 +2,11 @@
 layout: post
 author: Chris_Tufts
 share:  true
-title: "List Helpful LDA Resources"
+title: "List Helpful Latent Dirichlet Allocation Resources"
 modified:
 categories: blog
 excerpt: ""
-tags: [lda]
+tags: [lda, topicmodels]
 image:
   feature:
 date: 2017-03-02 ##T15:39:55-04:00
