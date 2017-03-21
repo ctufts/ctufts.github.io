@@ -51,7 +51,7 @@ problem you are solving.
 <b><u>Mean</u></b><br/>
 <b>Description:</b> The [mean](http://miningthedetails.com/blog/pragmaticstats/PragmaticPostMean/) is the
 parameter that signifies the centrality of the distribution.<br/>
-<b>Symbol:</b> &mu; - Symbol Name (Greek Letter): Mu <br />
+<b>Symbol:</b> &mu; - Symbol Name: Mu <br />
 
 <b><u>Standard Deviation</u></b><br/>
 <b>Description:</b> The [standard deviation](http://miningthedetails.com/blog/pragmaticstats/PragmaticPostStandardDeviation/) determines the spread of the data. Another way
@@ -59,13 +59,21 @@ to think about this is that the standard deviation determines how dense the prob
 is surrounding the mean. High standard deviation ~ probability is spread out across
 a wider range (less dense), low standard deviation ~ probability surrounding the mean is
 more dense. <br/>
-<b>Symbol:</b> &sigma; - Symbol Name (Greek Letter): Sigma,
+<b>Symbol:</b> &sigma; - Symbol Name: Sigma
 
-Go to the interactive data visualization at the link below to get a better sense of how the
+Experiment with the interactive data visualization below to get a better sense of how the
 parameters effect the shape of the distribution:
 
-<a href="https://bl.ocks.org/ctufts/raw/47d9de58c947966701c52a2a31f4a507/">
-Interactive Normal Probability Distribution</a>
+<div id='normalDistDiv'>
+<div id='meanDiv'>
+    <p id='meanValDisplay'></p>
+    <input id="meanSlider" class="paramSlider" type="range" min="-3"  max="3" step="0.1" value="0"  data-orientation="vertical" >
+  </div>
+  <div id='sdDiv'>
+    <p id='sdValDisplay'></p>
+    <input id="sdSlider" class="paramSlider" type="range" min="1" max="3"  step="0.1"  value="1"  data-orientation="vertical" >
+  </div>
+</div>
 
 ### Standard Normal Distribution
 
@@ -188,6 +196,214 @@ for(i in 1:nrow(params)){
 <sup id="fn2">Urdan, T. (2010). Statistics in plain English. New York: Routledge.
   <a href="#ref2"></a>
 </sup>
+
+<script src="https://d3js.org/d3.v4.min.js"></script>
+<script src="https://cdn.jsdelivr.net/jstat/latest/jstat.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/rangeslider.js/2.3.0/rangeslider.min.js"></script>
+
+<!-- <link rel="stylesheet" type="text/css" href="main.css"> -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/rangeslider.js/2.3.0/rangeslider.css">
+<link href="https://fonts.googleapis.com/css?family=Roboto+Slab" rel="stylesheet">
+<style>
+
+
+.axis path,
+.axis line {
+    fill: none;
+    stroke: black;
+    shape-rendering: crispEdges;
+}
+
+.axis text {
+    font-size: 10px;
+    font-family: 'Roboto Slab', serif;
+}
+
+.text-label {
+    font-size: 10px;
+    font-family: 'Roboto Slab', serif;
+}
+.paramSlider{
+  width:50%;
+}
+.dot {
+    stroke: #293b47;
+    fill: #7A99AC;
+}
+
+#meanValDisplay, #sdValDisplay {
+font-family: 'Roboto Slab', serif;
+}
+</style>
+<script>
+var numDataPoints = 1000;
+       var interval = 0.05
+       var upper_bound = 10.0;
+       var lower_bound = -10.0;
+       var mean = 0;
+       var std = 1;
+
+       var margin = {top: 20, right: 10, bottom: 20, left: 40};
+
+       var width = 600 - margin.left - margin.right,
+           height = 400 - margin.top - margin.bottom;
+       //create data points
+       var sdLabel = "Standard Deviation: " + std;
+       var meanLabel = "Mean: " + mean;
+       document.getElementById("meanValDisplay").innerHTML = meanLabel;
+       document.getElementById("sdValDisplay").innerHTML = sdLabel;
+
+       var dataset = create_data(interval, upper_bound, lower_bound, mean, std);
+
+
+       ////// Define Scales /////////////////
+       var xScale = d3.scaleLinear()
+           .domain([d3.min(dataset, function(d) {
+               return d.x;
+           }), d3.max(dataset, function(d) {
+               return d.x;
+           })])
+           .range([0,width]);
+       var yScale = d3.scaleLinear()
+           .domain([
+               d3.min(dataset, function(d) {
+                   return (d.y);
+               }),
+               d3.max(dataset, function(d) {
+                   return d.y;
+               })
+           ])
+           .range([height,0]);
+
+
+       /////// Define Axis //////////////////////////////
+       var xAxis = d3.axisBottom()
+           .scale(xScale);
+
+       var yAxis = d3.axisLeft()
+           .scale(yScale)
+           .ticks(8);
+
+       var svg = d3.select("#normalDistDiv").append("svg")
+                 .attr("width", width + margin.left + margin.right)
+                 .attr("height", height + margin.top + margin.bottom)
+                 .append("g")
+                 .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
+
+       // append data points
+       svg.append("g")
+           .attr("id", "circles")
+           .selectAll("circle")
+           .data(dataset)
+           .enter()
+           .append("circle")
+           .attr("class", "dot")
+           .attr("cx", function(d) {
+               return xScale(d.x);
+           })
+           .attr("cy", function(d) {
+               return yScale(d.y);
+           })
+           .attr("r", 3.0);
+
+
+       // append Axes ///////////////////////////
+       svg.append("g")
+           .attr("class", "x axis")
+           .attr("transform", "translate(0," + height + ")")
+           .call(xAxis);
+
+       svg.append("g")
+           .attr("class", "y axis")
+           .call(yAxis)
+           .append("text")
+           .attr("transform", "rotate(-90)")
+           .attr("y", 6)
+           .attr("x", -10)
+           .attr("dy", "0.71em")
+           .attr("fill", "#000")
+           .text("Probability Density");;
+
+
+
+       d3.selectAll(".paramSlider")
+         .on("input", function(){
+
+               var mean = d3.select('#meanSlider').property('value');
+               var std = d3.select('#sdSlider').property('value');
+
+
+               var sdLabel = "Standard Deviation: " + std;
+               var meanLabel = "Mean: " + mean;
+               document.getElementById("meanValDisplay").innerHTML = meanLabel;
+               document.getElementById("sdValDisplay").innerHTML = sdLabel;
+
+               // create new data
+               // dataset = create_data(numDataPoints);
+               var dataset = create_data(interval, upper_bound, lower_bound, mean, std);
+               var dur = 50;
+
+               //Update scale domains
+               xScale.domain([d3.min(dataset, function(d) {
+                       return d.x;
+                   }),
+                   d3.max(dataset, function(d) {
+                       return d.x;
+                   })
+               ]);
+               yScale.domain([
+                   d3.min(dataset, function(d) {
+                       return d.y;
+                   }),
+                   d3.max(dataset, function(d) {
+                       return d.y;
+                   })
+               ]);
+
+               // update data points
+               svg.selectAll("circle")
+                   .data(dataset)
+                   .transition()
+                   .duration(dur)
+                   .attr("cx", function(d) {
+                       return xScale(d.x);
+                   })
+                   .attr("cy", function(d) {
+                       return yScale(d.y);
+                   });
+
+
+               // update axis
+               svg.select(".x.axis")
+                   .transition()
+                   .duration(dur)
+                   .call(xAxis);
+
+               svg.select(".y.axis")
+                   .transition()
+                   .duration(dur)
+                   .call(yAxis);
+
+       });
+
+
+
+       function create_data(interval, upper_bound, lower_bound, mean, std) {
+           var n = Math.ceil((upper_bound - lower_bound) / interval)
+           var data = [];
+
+           x_position = lower_bound;
+           for (i = 0; i < n; i++) {
+               data.push({
+                   "y": jStat.normal.pdf(x_position, mean, std),
+                   "x": x_position
+               })
+               x_position += interval
+           }
+           return (data);
+       }
+</script>
 
 [jekyll-gh]: https://github.com/jekyll/jekyll
 [jekyll]:    http://jekyllrb.com
