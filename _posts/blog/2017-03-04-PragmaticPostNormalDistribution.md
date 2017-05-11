@@ -9,7 +9,7 @@ excerpt: ""
 tags: [pragmaticstats, r, python]
 image:
   feature: pragmatic_stats_normaldist/nd_mean0_sd1.svg
-date: 2017-03-04 ##T15:39:55-04:00
+date: 2015-03-04 ##T15:39:55-04:00
 ---
 
 # What is it?

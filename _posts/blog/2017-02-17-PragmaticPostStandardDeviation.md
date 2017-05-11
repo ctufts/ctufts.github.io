@@ -9,7 +9,7 @@ excerpt: ""
 tags: [pragmaticstats, r, python]
 image:
   feature:
-date: 2017-02-21 ##T15:39:55-04:00
+date: 2015-02-21 ##T15:39:55-04:00
 ---
 
 # What is it?
