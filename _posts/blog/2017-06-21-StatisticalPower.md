@@ -9,7 +9,7 @@ excerpt: ""
 tags: [rstats]
 link:
 image:
-date: 2017-06-21 ##T19:39:55-04:00
+date: 2017-07-11 ##T19:39:55-04:00
 
 ---
 
@@ -17,20 +17,20 @@ date: 2017-06-21 ##T19:39:55-04:00
 
 Let's start by going over type I and type II error which occurs in hypothesis
 testing. To aid in this review I'll use an example of comparing two samples. I
-have one sample of 100 students did not study for a test and 100 students that
-took the same test and studied for 2 hours.
+have one sample of students which did not study for a test and another sample of students
+ (from the same population) that took the same test and studied for 2 hours.
 
-* Null hypothesis: The mean score of each sample is the same. Said differently,
+* <b>Null hypothesis (H<sub>o</sub>)</b>: The mean score of each sample is the same. Said differently,
 there is no difference in the means between the two samples (i.e. there is no
 	effect present)
-* Alternative hypothesis: The mean score for the students who studied will be
-different than the sample of students that did not study. We want to know if it
-has a positive or negative effect on the score.
+* <b>Alternative hypothesis (H<sub>a</sub>)</b>: The mean score for the students who studied will be different than the sample of students that did not study. This is representative
+of a hypothesis with [two tails](https://en.wikipedia.org/wiki/One-_and_two-tailed_tests), if we were only looking for a positive effect (scores
+    go up for the study group) it would be a one tail test.
 
 The possible errors that may occur are:
 
 * Type I (&alpha;)- Often referred to as a false positive. Basically this is when you
-observe an effect that isn't actually present (Rejecting the Null Hypothesis
+observe an effect that isn't actually present (Rejecting the null hypothesis
 	when it is actually true).
 	* In this example that would mean our results indicate the group that
 		studied had a higher (or lower) score on average than students that didn't. Only problem is that we would be wrong.
@@ -45,7 +45,7 @@ observe an effect that isn't actually present (Rejecting the Null Hypothesis
 
 I'm going to focus on type II error for the moment, as this is the one most
 associated with power. The statistical power is a measure of our ability to
-detect an effect if one is present and it is defined as 1-&beta;.
+detect an effect, if one is present, and it is defined as 1-&beta;.
 
 
 
@@ -62,9 +62,9 @@ such an experiment we need to answer a few questions:
 Calculating the statistical power of the experiment will allow us to answer question
 3, however first we must answer the first 2 questions.
 
+
 # Effect Size
-Let's address question 1 first. In order to understand what power really is we need to understand effect size. Effect size is a standardized measure of an effect. For
-example is a change of 10 points on the test when the standard deviation is 2 points
+Let's address question 1 first. In order to understand what power really is we need to understand effect size. Effect size is a standardized measure of an effect. Is a change of 10 points on the test when the standard deviation is 2 points
 any different than a change of 5 points with a standard deviation of 1 point? Effect
 size allows for the comparison of experiments which may be on different scales.
 
@@ -86,41 +86,75 @@ Cohen's <i>d</i> is not the only method for calculating effect sizes. Depending 
 data and test you are performing there are various options, some can be found
 here:
 
-* [Dr. Becker of CSSS](http://www.uccs.edu/lbecker/effect-size.html)
+* [CSSS - Effect Size by Dr. Lee Becker](http://www.uccs.edu/lbecker/effect-size.html)
 * [Some Practical Guidelines for Effective Sample Size Determination by Russell V. Length](http://pegasus.cc.ucf.edu/~lni/sta5175/Lenth2001.pdf)
 
 ## What Is the Acceptable Amount of Type I Error?
 Let's get back to question 2 - "At what point do we reject the null hypothesis?".
 This question is basically asking "What level of type I error are we comfortable
-with?". I won't go into much detail on this as the generally acceptable p-value
-is 0.05 (an &alpha; value of 0.95). This translates to "If the probability
+with?". I won't go into much detail on this as the generally consensus is an p-value
+below an &alpha; of 0.05. This translates to "If the probability
 of the effect seen is due to chance (sampling error) is less than 5%, reject
 the null hypothesis."
 
+For further reading on the pitfalls/shortcomings of p-values checkout:
 
-BASED ON ALPHA OF 0.05, BETA OF 0.2 - PLOTS
-PLOTS OF TYPE I II AND POWER AND EXPLANATION OF ANY MISCONCEPTION, I.E.
-IT IS THE EFFECT SIZE THAT WE ARE LOOKING FOR NOT THE ACTUAL MEAN DIFFERENCE
+* [Null Hypothesis Significance Testing: A Review of an Old and Continuing Controversy](https://www.researchgate.net/publication/12384017_Null_Hypothesis_Significance_Testing_A_Review_of_an_Old_and_Continuing_Controversy?enrichId=rgreq-e7be0c4f538cd263a7ad406bdc1e50ac-XXX&enrichSource=Y292ZXJQYWdlOzEyMzg0MDE3O0FTOjIwODM5ODY5NzE0NDMyMEAxNDI2Njk3NTMwMDk3&el=1_x_2&_esc=publicationCoverPdf)
+* [Null Hypothesis Testing: Problems, Prevalence, and an Alternative](http://www.jstor.org/stable/3803199)
+
+
+### A Slight Detour
+Now that we have talked about what effect size is and the generally excepted
+Type I error, let's go through some visual examples.
+The plots below show the regions of overlap between the null hypothesis (H<sub>o</sub>)
+and the alternative hypothesis (H<sub>a</sub>).  In this example the alternative
+hypothesis is defined as an effect of 0.1 which can be seen by the mean value of it's
+distribution.
 
 <img src='/images/power_analysis/Type_I_distributions.svg'>
+The grey area in the plot above is the area where type I error can occur.
+There is overlap between the tail of the null hypothesis and the alternative
+hypothesis.
 <img src='/images/power_analysis/Type_II_distributions.svg'>
+The grey area in this plot is the area of the alternative hypothesis that cannot
+be detected due to overlap with the null hypothesis. In other words we would fail
+to reject the null hypothesis (i.e. detect  a real effect) in this
+region.
 <img src='/images/power_analysis/Power_distributions.svg'>
+The grey area in this plot shows the region we are capable of detecting an effect
+and rejecting the null hypothesis, i.e. the power.
 
 
 ## Selecting the Sample Size for an Experiment
 Now on to question 3. Sample size should be determined prior to starting an
-experiment. To select the proper sample size we use power analysis. A power
-value of 0.80 (Type II error of 0.2) is considered the required minimum power
+experiment. To select the proper sample size we use power analysis. [A power
+value of 0.80](http://www2.psych.ubc.ca/~schaller/528Readings/Cohen1992.pdf) (Type II error of 0.2) is considered the required minimum power
 value when performing an experiment.
 
-What is the relation ship between sample size and power?
 
-ADD GRAPHICS FROM SAMPLE_SIZE_EFFECT_ON_POWER.R
+
+First let's take a look at the relation ship between sample size and power? Below you will
+see the distributions of the null and alternative hypotheses based on an
+&alpha; of 0.05 and an effect size of 0.1 with varying sample sizes.
+
+In the previous visualizations I mentioned the distributions have means of zero (null)
+and 0.1 (alternative), but you may be wondering what the standard deviation for
+the distributions is. The standard deviation is the standard error:
+
+<span>$$SE_{\bar{x}} = {s \over{\sqrt{n}}}$$</span>
+
+The standard error is driven down as the sample size goes up as can be seen in
+the examples below. You can see the distributions become narrower and separate
+making a clearer decision boundary with less overlap. This has the effect of
+increasing our ability to detect an effect if present - in other words our
+power increases.
 
 <figure>
     <img src='/images/power_analysis/Power_0_11.svg'>
     <figcaption>N=100</figcaption>
 </figure>
+
+
 <figure>
     <img src='/images/power_analysis/Power_0_61.svg'>
     <figcaption>N=1000</figcaption>
@@ -132,18 +166,16 @@ ADD GRAPHICS FROM SAMPLE_SIZE_EFFECT_ON_POWER.R
 
 
 
-# Example: What Sample Size Do I Need?
-It is [general consensus](http://www2.psych.ubc.ca/~schaller/528Readings/Cohen1992.pdf) that a power value of 0.80 is acceptable. In addition
-a p-value below 0.05 (a type I error below 0.05) is normally used as the
-constraint to reject a null hypothesis. I point this out as we need to know our
-preference for power and alpha to determine our sample size a priori. In our
-example we only require the ability to detect a 'medium' effect of 0.5 in a
-two sided t-test.
+### Example: What Sample Size Do I Need?
 
 First step is to identify the sample size necessary to meet our requirements:
+
 * Detects an effect size of 0.5
 * Power = 0.80
 * &alpha; = 0.05
+* two-sided t-test
+
+To estimate sample size I've used the [<i>pwr</i>](https://cran.r-project.org/web/packages/pwr/vignettes/pwr-vignette.html) package in R.
 
 {% highlight R %}
 library(ggplot2)
@@ -153,19 +185,21 @@ t_test_pwr <- pwr.t.test(d = 0.5,
                          power = 0.80, sig.level = 0.05,
                          alternative = 'two.sided')
 print(t_test_pwr)
+{% endhighlight %}
 
+{% highlight R %}
 Two-sample t test power calculation
 
-				 n = 63.76561
-				 d = 0.5
+         n = 63.76561
+         d = 0.5
  sig.level = 0.05
-		 power = 0.8
+     power = 0.8
 alternative = two.sided
 
 NOTE: n is number in *each* group
 {% endhighlight %}
 
-We can also plot the power vs. the sample size (built into pwr)
+We can also plot the power vs. the sample size.
 {% highlight R %}
 plot(t_test_pwr)
 {% endhighlight %}
@@ -174,7 +208,7 @@ plot(t_test_pwr)
 
 
 
-I wrote a small function to create random samples of our experiment ...
+I wrote a small function to create random samples of an experiment.
 
 {% highlight R %}
 perform_t_test <- function(n,mu_a, mu_b, s){
@@ -184,7 +218,7 @@ perform_t_test <- function(n,mu_a, mu_b, s){
 }
 {% endhighlight %}
 
-So now that we know the minimun sample size to meet our requirements, let's
+So now that we know the minimum sample size to meet our requirements, let's
 test it out. First we will try an experiment with a sample size smaller than
 our power analysis stated.
 
@@ -213,7 +247,8 @@ The results show the null hypothesis is only rejected 41% of the time assuming
 we are using an &alpha; of 0.05.
 
 Now let's try it with a sample size which is greater than the required sample
-size.
+size.  We find the null hypothesis is rejected in 88.5% of the experiments.
+
 {% highlight R %}
 n <- 80
 effect_detected_percent <- mean(
@@ -225,9 +260,8 @@ print(effect_detected_percent)
 
 What can happen if I perform an experiment that is overpowered? In the case
 of a trial that uses animals or humans there are [ethical concerns](https://www.ma.utexas.edu/users/mks/statmistakes/UnderOverPower.html)
-in addition to the added cost and waste of resources. On top of these concerns
-an overpowered experiment may detect extremely small effect as significant. Take
-the example below. Say my two groups have mean test scores of 80 and 80.5, but
+in addition to the added cost and waste of resources. In addition to these issues,
+an overpowered experiment is more likely to detect extremely small effects as significant. Take the example below. Say my two groups have mean test scores of 80 and 80.5, but
 the standard deviation of the groups is 25 points instead of 10.
 
 {% highlight R %}
@@ -247,13 +281,13 @@ print(effect_detected_percent)
 {% endhighlight %}
 
 As a result the effect is only 0.02, but the null hypothesis is rejected in
-approximately 22% of the experiments. This means 22% of the time we would find a
+ 23% of the experiments. This means 23% of the time we would find a
 significant result that would cause us to reject the null hypothesis, but knowing
-the data a priori, we know that the effect is neglibable and there is most likely
+the data a priori, we know that the effect is negligible and there is most likely
 no real difference between the two groups.
 
 If we use the same means and standard deviation and adjust to a smaller sample size,
-80, we see the null hypothesis is only rejected 5% of the time.
+80, we see the null hypothesis is only rejected 5.6% of the time.
 
 {% highlight R %}
 n <- 80
@@ -266,33 +300,15 @@ effect_detected_percent <- mean(
   replicate(1000, perform_t_test(n, mu_a, mu_b, s)) < 0.05)
 
 print(cohen_d)
+[1] 0.02
 print(effect_detected_percent)
+[1] 0.056
 
 {% endhighlight %}
 
-Effect size stuff
 
-To calculate the power for a given sample size, I need to know the size of the
-effect that I want to be able to detect. Note that this would also be the case if
-I wanted to calculate the appropriate sample size for a given power value.
-
-There a few different methods for calculating the effect size which can be found
-in the following resources:
-
-* [Dr. Becker of CSSS](http://www.uccs.edu/lbecker/effect-size.html)
-* [Some Practical Guidelines for Effective Sample Size Determination by Russell V. Length](http://pegasus.cc.ucf.edu/~lni/sta5175/Lenth2001.pdf)
-
-
-You may notice that the methods to calculate effect size are based on a
-statistic (or parameter? (check this)) which we may not know prior to calculating
-the sample size for our experiment.
-
-In addition there are also general guidelines for effect sizes cited by
-[Cohen](http://www2.psych.ubc.ca/~schaller/528Readings/Cohen1992.pdf).  
-
-
-# References and Further Reading
-* [The Power of “P”: On Overpowered Clinical Trials and “Positive” Results by Howard S. Hochster, MD](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2630828/pdf/gcr2_2p0108.pdf)
+If you are interested in further reading into overpowered studies checkout
+[The Power of “P”: On Overpowered Clinical Trials and “Positive” Results by Howard S. Hochster, MD](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2630828/pdf/gcr2_2p0108.pdf)
 
 
 [jekyll-gh]: https://github.com/jekyll/jekyll
