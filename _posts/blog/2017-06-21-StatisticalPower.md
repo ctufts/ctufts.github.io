@@ -156,11 +156,11 @@ power increases.
 
 
 <figure>
-    <img src='/images/power_analysis/Power_0_61.svg'>
+    <img src='/images/power_analysis/power_0_61.svg'>
     <figcaption>N=1000</figcaption>
 </figure>
 <figure>
-    <img src='/images/power_analysis/Power_0_89.svg'>
+    <img src='/images/power_analysis/power_0_89.svg'>
     <figcaption>N=2000</figcaption>
 </figure>
 
