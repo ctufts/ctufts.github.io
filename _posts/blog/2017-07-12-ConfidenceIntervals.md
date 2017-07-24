@@ -9,7 +9,8 @@ excerpt: ""
 tags: [rstats]
 link:
 image:
-date: 2017-07-13 ##T19:39:55-04:00
+  feature: CI/CI_feature_image.svg
+date: 2017-07-24 ##T19:39:55-04:00
 
 ---
 
@@ -22,8 +23,8 @@ try and explain them, let's look at the following process.
 1. Sample a population.
 2. Calculate your statistic from the sample. For sake of simplicity we can just
 go with the sample mean.
-3. Calculate confidence interval around sample. I realize I still haven't explained
-what it is, but bear with me. For now just know it is a range of values.  
+3. Calculate confidence interval around sample. I realize I  haven't explained
+what a confidence interval is, but bear with me. For now just know it is a range of values.  
 4. Is the population parameter (assuming it is known) inside the confidence interval?
 5. Repeat a large number of times (let's call that N for now).
 
@@ -87,7 +88,8 @@ t-value:  0.001293056 , critical value:  1.962341 CI: [ 11.81147 , 12.18878 ]
 
 The t-value is not larger than the critical value, i.e. null hypothesis is
 not rejected. We can think of this as there is a lack of evidence to suggest
-the sample statistic is different from the population parameter.
+the sample statistic is different from the population parameter. All of the
+above snippet can be carried out using the built in <i>t.test</i> method.
 
 {% highlight R %}
 > t.test(sample_a, mu=mu)
@@ -166,6 +168,13 @@ CI_bootstrap
 > diff(ci)
 [1] 0.3773023
 {% endhighlight %}
+
+
+We can see the width of our confidence intervals via bootstrapping are very
+close to those calculated using the <i>t.test</i> method. For more info on
+the justification of bootstrapping and why it won't improve point estimates
+(estimating the mean), but is good at estimating the distribution of
+relative variation (the confidence intervals) see the [Bootstrap Confidence Intervals MIT course reading.](https://ocw.mit.edu/courses/mathematics/18-05-introduction-to-probability-and-statistics-spring-2014/readings/MIT18_05S14_Reading24.pdf)  
 
 
 [jekyll-gh]: https://github.com/jekyll/jekyll

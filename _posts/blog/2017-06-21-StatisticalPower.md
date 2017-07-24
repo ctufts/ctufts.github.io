@@ -9,6 +9,7 @@ excerpt: ""
 tags: [rstats]
 link:
 image:
+  feature: power_analysis/power_feature_image.svg
 date: 2017-07-11 ##T19:39:55-04:00
 
 ---
