@@ -1,0 +1,28 @@
+---
+layout: base.njk
+title: Archive
+---
+<section class="card">
+  <h1>Archive</h1>
+  <p>Legacy posts preserved as a read-only archive.</p>
+</section>
+
+{% set currentYear = "" %}
+{% for post in collections.archive | reverse %}
+  {% set year = post.date | dateIso | slice(0, 4) %}
+  {% if year != currentYear %}
+    {% if currentYear != "" %}
+      </ul>
+    {% endif %}
+    <h2>{{ year }}</h2>
+    <ul class="post-list">
+    {% set currentYear = year %}
+  {% endif %}
+  <li>
+    <div class="meta">{{ post.date | dateReadable }}</div>
+    <a href="{{ post.url }}">{{ post.data.title }}</a>
+  </li>
+{% endfor %}
+{% if currentYear != "" %}
+  </ul>
+{% endif %}

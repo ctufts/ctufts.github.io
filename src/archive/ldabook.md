@@ -1,0 +1,21 @@
+---
+layout: post.njk
+title: "The Little Book of LDA"
+date: 2018-01-31
+tags: [archive, rstats, lda, blog, r, lda]
+permalink: /archive/ldabook/index.html
+---
+# I Started Writing a Book!
+
+<a href="https://ldabook.com">
+<img   style="border: 1px solid black;display: block; margin: auto;" height="50%" width="50%" src="/images/cover_image_small.png"/>
+</a>
+
+Over the last couple of years I have been doing a fair amount of NLP
+work in my day to day. One of the methods I often use for dimensionality reduction and summarization of text is Latent Dirichlet Allocation (LDA).
+
+In an effort to gain a deeper understanding of all the moving parts of LDA, I started writing a short gitbook focused on LDA and Gibbs Sampling. You can check it out at [ldabook.com](https://ldabook.com). Feel free to contact me via with comments or suggestions.
+
+
+[jekyll-gh]: https://github.com/jekyll/jekyll
+[jekyll]:    http://jekyllrb.com

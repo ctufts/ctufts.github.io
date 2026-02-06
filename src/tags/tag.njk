@@ -1,0 +1,23 @@
+---
+layout: base.njk
+pagination:
+  data: collections.tagList
+  size: 1
+  alias: tag
+permalink: "tags/{{ tag | slug }}/index.html"
+---
+<section class="card">
+  <h1>Tag: {{ tag }}</h1>
+  <p class="meta">Entries filed under {{ tag }}.</p>
+</section>
+
+<ul class="post-list">
+  {% for post in collections.all | reverse %}
+    {% if post.data.tags | hasTag(tag) %}
+      <li>
+        <div class="meta">{{ post.date | dateReadable }}</div>
+        <a href="{{ post.url }}">{{ post.data.title }}</a>
+      </li>
+    {% endif %}
+  {% endfor %}
+</ul>

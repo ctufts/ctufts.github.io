@@ -1,0 +1,30 @@
+---
+permalink: /feed.xml
+eleventyExcludeFromCollections: true
+---
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0">
+  <channel>
+    <title>{{ site.title | xmlEscape }}</title>
+    <link>{{ site.url }}</link>
+    <description>{{ site.description | xmlEscape }}</description>
+    <language>en-us</language>
+    {% set latestPost = collections.posts | last %}
+    {% if latestPost %}
+    <lastBuildDate>{{ latestPost.date | dateRfc822 }}</lastBuildDate>
+    {% endif %}
+    {% for post in collections.posts | reverse | slice(0, 20) %}
+    <item>
+      <title>{{ post.data.title | xmlEscape }}</title>
+      <link>{{ site.url }}{{ post.url }}</link>
+      <guid>{{ site.url }}{{ post.url }}</guid>
+      <pubDate>{{ post.date | dateRfc822 }}</pubDate>
+      {% if post.data.description %}
+      <description>{{ post.data.description | xmlEscape }}</description>
+      {% else %}
+      <description>{{ post.templateContent | striptags | truncate(200) | xmlEscape }}</description>
+      {% endif %}
+    </item>
+    {% endfor %}
+  </channel>
+</rss>
