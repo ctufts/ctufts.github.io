@@ -1,7 +1,4 @@
-_site
+node_modules/
+dist/
 .DS_Store
-*.sublime-project
-*.sublime-workspace
-codekit-config.json
-node_modules
-.sass-cache
+.sass-cache/
