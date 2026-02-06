@@ -1,13 +1,13 @@
 @import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@300;400;600&family=IBM+Plex+Mono:wght@400;600&display=swap");
 
 :root {
-  --bg: #f5f1ea;
-  --ink: #1b1b1b;
-  --muted: #5a5a5a;
-  --accent: #b1432f;
-  --line: #d3c7b6;
-  --paper: #fffaf2;
-  --shadow: rgba(27, 27, 27, 0.08);
+  --bg: #335c67;
+  --ink: #fff3b0;
+  --muted: #e09f3e;
+  --accent: #e09f3e;
+  --line: #9e2a2b;
+  --paper: #2a4a54;
+  --shadow: rgba(9, 18, 20, 0.35);
 }
 
 * {
@@ -18,7 +18,7 @@ body {
   margin: 0;
   font-family: "IBM Plex Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
   color: var(--ink);
-  background: radial-gradient(circle at top left, #fef7ed 0%, #f5f1ea 55%, #efe6d8 100%);
+  background: radial-gradient(circle at top left, #3b6b78 0%, #335c67 55%, #23424a 100%);
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -95,18 +95,36 @@ body {
   margin-top: 28px;
 }
 
+.content a {
+  color: #fff7d6;
+  text-decoration: underline;
+  text-decoration-color: rgba(255, 243, 176, 0.7);
+  text-underline-offset: 3px;
+}
+
+.content a:hover {
+  color: var(--ink);
+  text-decoration-color: var(--accent);
+}
+
 .content p {
   line-height: 1.7;
   color: var(--ink);
 }
 
+.content img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
 .content pre {
-  background: #111111;
-  color: #f4f1ea;
+  background: #1a3036;
+  color: #fff3b0;
   padding: 16px 18px;
   border-radius: 8px;
   overflow-x: auto;
-  box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.08);
+  box-shadow: inset 0 0 0 1px rgba(255, 243, 176, 0.12);
 }
 
 .content code {
@@ -116,8 +134,8 @@ body {
 
 .content p code,
 .content li code {
-  background: #ede5d8;
-  color: #3b2e24;
+  background: #e09f3e;
+  color: #540b0e;
   padding: 2px 6px;
   border-radius: 6px;
 }
@@ -136,7 +154,7 @@ body {
   align-items: center;
   padding: 10px 14px;
   border: 1px dashed var(--line);
-  background: #f7efe2;
+  background: #2f5560;
   color: var(--muted);
   font-size: 13px;
   letter-spacing: 0.04em;
@@ -158,7 +176,7 @@ body {
 .post-list li {
   padding: 16px 18px;
   border-left: 4px solid var(--accent);
-  background: #fffdf8;
+  background: #2b4f5a;
 }
 
 .post-list a {
