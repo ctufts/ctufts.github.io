@@ -3,4 +3,4 @@ layout: base.njk
 title: About
 ---
 
-TODO
+Collection of thoughts from a jaded engineer. 
