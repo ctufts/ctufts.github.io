@@ -2,7 +2,7 @@
 layout: post.njk
 title: "Feature Selection with FSelector Package"
 date: 2015-04-10
-tags: [archive, R, feature selection, blog, r]
+tags: [archive, R]
 permalink: /archive/fselector/index.html
 ---
 I am currently working on the [Countable Care Challenge](http://www.drivendata.org/competitions/6/) hosted by the [Planned Parenthood Federation of America](http://www.plannedparenthood.org/). The dataset for this challenge has over a thousand features. Feature selection was used to help cut down on runtime and eliminate unecessary features prior to building a prediction model. The <i>random.forest.importance</i> function in the [FSelector](http://cran.r-project.org/web/packages/FSelector/index.html) package was implemented in R to accomplish this task.

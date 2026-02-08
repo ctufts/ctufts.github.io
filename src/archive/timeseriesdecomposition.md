@@ -2,7 +2,7 @@
 layout: post.njk
 title: "Time Series Decomposition with Moving Averages"
 date: 2015-10-18
-tags: [archive, rstats, timeseries, blog, r]
+tags: [archive, r]
 permalink: /archive/timeseriesdecomposition/index.html
 ---
 # Overview

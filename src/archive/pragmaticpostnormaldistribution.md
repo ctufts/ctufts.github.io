@@ -2,7 +2,7 @@
 layout: post.njk
 title: "Pragmatic Stats: Normal Distribution"
 date: 2017-03-04
-tags: [archive, pragmaticstats, r, python, blog, pragmaticstats]
+tags: [archive, pragmaticstats, r, python, stats]
 permalink: /archive/pragmaticpostnormaldistribution/index.html
 ---
 # What is it?

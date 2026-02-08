@@ -2,7 +2,7 @@
 layout: post.njk
 title: "Gensim LDA: Tips and Tricks"
 date: 2016-08-10
-tags: [archive, lda, topic modeling, gensim, python, blog, python, lda]
+tags: [archive, python, nlp]
 permalink: /archive/gensimlda/index.html
 ---
 # Introduction

@@ -2,7 +2,7 @@
 layout: post.njk
 title: "The Little Book of LDA"
 date: 2018-01-31
-tags: [archive, rstats, lda, blog, r, lda]
+tags: [archive, r, nlp]
 permalink: /archive/ldabook/index.html
 ---
 # I Started Writing a Book!

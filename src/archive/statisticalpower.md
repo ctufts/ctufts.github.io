@@ -2,7 +2,7 @@
 layout: post.njk
 title: "Power Analysis and Effect Size Estimation"
 date: 2017-06-21
-tags: [archive, rstats, blog, r]
+tags: [archive, r, stats]
 permalink: /archive/statisticalpower/index.html
 ---
 # What is Statistical Power?

@@ -2,7 +2,7 @@
 layout: post.njk
 title: "Identifying Non-Matching Rows Between Data Frames Using Dplyr"
 date: 2015-04-13
-tags: [archive, R, dplyr, blog, r]
+tags: [archive, r]
 permalink: /archive/matchingrowsdplyr/index.html
 ---
 Earlier today I ran into a situation where I had to compare two data frames for some analysis I was doing. In particular I needed to identify the rows in data frame A which were not present in data frame B.  I have used several different methods for this task in the past, but recently I have been using the <i>anti_join</i> function in the [<i>dplyr</i>](http://cran.r-project.org/web/packages/dplyr/index.html) package. 

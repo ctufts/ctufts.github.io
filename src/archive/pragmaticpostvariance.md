@@ -2,7 +2,7 @@
 layout: post.njk
 title: "Pragmatic Stats: Variance"
 date: 2017-02-11
-tags: [archive, pragmaticstats, r, python, blog, pragmaticstats]
+tags: [archive, pragmaticstats, r, python, stats]
 permalink: /archive/pragmaticpostvariance/index.html
 ---
 # What is it?

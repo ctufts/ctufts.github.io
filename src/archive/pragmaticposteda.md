@@ -2,7 +2,7 @@
 layout: post.njk
 title: "Pragmatic Stats: Exploratory Data Analysis - Visualizations"
 date: 2017-02-21
-tags: [archive, pragmaticstats, r, python, blog, pragmaticstats]
+tags: [archive, pragmaticstats, r, python, stats]
 permalink: /archive/pragmaticposteda/index.html
 ---
 # What is it?

@@ -2,7 +2,7 @@
 layout: post.njk
 title: "List Helpful Latent Dirichlet Allocation Resources"
 date: 2017-03-02
-tags: [archive, lda, topicmodels, blog]
+tags: [archive, nlp]
 permalink: /archive/helpful-lda-resources/index.html
 ---
 # Learning Materials for LDA: Papers, Talks, Presentations

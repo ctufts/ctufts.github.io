@@ -2,7 +2,7 @@
 layout: post.njk
 title: "Activity Monitor Operator Characteristic"
 date: 2015-05-30
-tags: [archive, R, ROC, AMOC, blog, r]
+tags: [archive, R, stats]
 permalink: /archive/amoc/index.html
 ---
 I recently stumbled onto a great paper by Fawcett and Provost titled <i>[Activity Monitoring: Noticing interesting changes in behavior](http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.33.3654&rep=rep1&type=pdf)</i>.  Examples of activity monitoring include fraud detection, news story monitoring, and some types of fault detection.<sup>1</sup>  The Activity Monitor Operator Characteristic (AMOC) is a metric used to analyze activity monitoring performance.  

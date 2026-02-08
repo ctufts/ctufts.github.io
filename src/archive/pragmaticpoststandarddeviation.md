@@ -2,7 +2,7 @@
 layout: post.njk
 title: "Pragmatic Stats: Standard Deviation"
 date: 2017-02-17
-tags: [archive, pragmaticstats, r, python, blog, pragmaticstats]
+tags: [archive, pragmaticstats, r, python, stats]
 permalink: /archive/pragmaticpoststandarddeviation/index.html
 ---
 # What is it?

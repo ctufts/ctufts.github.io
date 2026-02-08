@@ -2,7 +2,7 @@
 layout: post.njk
 title: "Metropolis Hastings and the Traveling Politician: Clay Davis Edition"
 date: 2017-02-17
-tags: [archive, python, mcmc, thewire, blog, python]
+tags: [archive, python, stats]
 permalink: /archive/metropolishastings/index.html
 ---
 # Intro

@@ -2,7 +2,7 @@
 layout: post.njk
 title: "What's the difference? : An Overview of Non-Parametric Tests"
 date: 2016-08-02
-tags: [archive, rstats, broom, blog, r]
+tags: [archive, stats, r]
 permalink: /archive/non-parametric-tests/index.html
 ---
 # Are my datasets different?

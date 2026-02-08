@@ -2,7 +2,7 @@
 layout: post.njk
 title: "Pragmatic Stats: Mean"
 date: 2017-02-11
-tags: [archive, pragmaticstats, r, python, blog, pragmaticstats]
+tags: [archive, pragmaticstats, r, stats, python]
 permalink: /archive/pragmaticpostmean/index.html
 ---
 # What is it?

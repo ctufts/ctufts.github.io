@@ -2,7 +2,7 @@
 layout: post.njk
 title: "Confidence Intervals"
 date: 2017-07-12
-tags: [archive, rstats, blog, r]
+tags: [archive, r, stats]
 permalink: /archive/confidenceintervals/index.html
 ---
 # What are Confidence Intervals?

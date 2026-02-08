@@ -2,7 +2,7 @@
 layout: post.njk
 title: "Model Sensitivity Analysis"
 date: 2015-04-30
-tags: [archive, R, sensitivity analysis, blog, r]
+tags: [archive, r, ML]
 permalink: /archive/sensitivityanalysis/index.html
 ---
 I attended the [Machine Learning Conference](http://mlconf.com/mlconf-2015-nyc/) in NYC last month and was lucky enough to catch a [presentation by Dan Mallinger](http://www.slideshare.net/SessionsEvents/mallinger-analyticscommunicationcomplex-models).  The talk focused on properly communicating models and methods to others regardless of their technical background. The base of this communication is in understanding the model and methods we are using so that we can present them to others. 

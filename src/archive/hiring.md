@@ -2,7 +2,7 @@
 layout: post.njk
 title: "Hiring Process for Technical Roles"
 date: 2016-05-14
-tags: [archive, hiring, interview, technical role, datascience, blog, meta]
+tags: [archive]
 permalink: /archive/hiring/index.html
 ---
 # Background
