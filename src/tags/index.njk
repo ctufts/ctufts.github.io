@@ -1,0 +1,13 @@
+---
+layout: base.njk
+title: Tags
+---
+<section class="card">
+  <h1>Tags</h1>
+  <p>Filter writing by topic.</p>
+  <div class="tag-grid">
+    {% for tag in collections.tagList %}
+      <a class="tag-pill" href="/tags/{{ tag | slug }}/">{{ tag }}</a>
+    {% endfor %}
+  </div>
+</section>

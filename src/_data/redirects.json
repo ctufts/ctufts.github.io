@@ -1,0 +1,138 @@
+[
+  {
+    "from": "/blog/amoc",
+    "to": "/archive/amoc/"
+  },
+  {
+    "from": "/blog/beautifulsoupwebscraping",
+    "to": "/archive/beautifulsoupwebscraping/"
+  },
+  {
+    "from": "/blog/confidenceintervals",
+    "to": "/archive/confidenceintervals/"
+  },
+  {
+    "from": "/blog/creatingd3blocks",
+    "to": "/archive/creatingd3blocks/"
+  },
+  {
+    "from": "/blog/fselector",
+    "to": "/archive/fselector/"
+  },
+  {
+    "from": "/blog/gensimlda",
+    "to": "/archive/gensimlda/"
+  },
+  {
+    "from": "/blog/glycemicloadvis",
+    "to": "/archive/glycemicloadvis/"
+  },
+  {
+    "from": "/blog/helpful-lda-resources",
+    "to": "/archive/helpful-lda-resources/"
+  },
+  {
+    "from": "/blog/hiring",
+    "to": "/archive/hiring/"
+  },
+  {
+    "from": "/blog/i-95trafficapp",
+    "to": "/archive/i-95trafficapp/"
+  },
+  {
+    "from": "/blog/identifyemojiintweets",
+    "to": "/archive/identifyemojiintweets/"
+  },
+  {
+    "from": "/blog/imagetablermarkdown",
+    "to": "/archive/imagetablermarkdown/"
+  },
+  {
+    "from": "/blog/imagetablermarkdown-latex",
+    "to": "/archive/imagetablermarkdown-latex/"
+  },
+  {
+    "from": "/blog/installingr",
+    "to": "/archive/installingr/"
+  },
+  {
+    "from": "/blog/ldabook",
+    "to": "/archive/ldabook/"
+  },
+  {
+    "from": "/blog/maptimemeetupnotebook",
+    "to": "/archive/maptimemeetupnotebook/"
+  },
+  {
+    "from": "/blog/matchingrowsdplyr",
+    "to": "/archive/matchingrowsdplyr/"
+  },
+  {
+    "from": "/blog/metropolishastings",
+    "to": "/archive/metropolishastings/"
+  },
+  {
+    "from": "/blog/non-parametric-tests",
+    "to": "/archive/non-parametric-tests/"
+  },
+  {
+    "from": "/blog/phillycrime",
+    "to": "/archive/phillycrime/"
+  },
+  {
+    "from": "/blog/phillytweets",
+    "to": "/archive/phillytweets/"
+  },
+  {
+    "from": "/blog/plotlyintegrationinshiny",
+    "to": "/archive/plotlyintegrationinshiny/"
+  },
+  {
+    "from": "/blog/pragmaticposteda",
+    "to": "/archive/pragmaticposteda/"
+  },
+  {
+    "from": "/blog/pragmaticpostmean",
+    "to": "/archive/pragmaticpostmean/"
+  },
+  {
+    "from": "/blog/pragmaticpostmedian",
+    "to": "/archive/pragmaticpostmedian/"
+  },
+  {
+    "from": "/blog/pragmaticpostnormaldistribution",
+    "to": "/archive/pragmaticpostnormaldistribution/"
+  },
+  {
+    "from": "/blog/pragmaticpoststandarddeviation",
+    "to": "/archive/pragmaticpoststandarddeviation/"
+  },
+  {
+    "from": "/blog/pragmaticpostvariance",
+    "to": "/archive/pragmaticpostvariance/"
+  },
+  {
+    "from": "/blog/sensitivityanalysis",
+    "to": "/archive/sensitivityanalysis/"
+  },
+  {
+    "from": "/blog/statisticalpower",
+    "to": "/archive/statisticalpower/"
+  },
+  {
+    "from": "/blog/timeseriesdecomposition",
+    "to": "/archive/timeseriesdecomposition/"
+  },
+  {
+    "from": "/blog/topicmodelingufcchicagotweets",
+    "to": "/archive/topicmodelingufcchicagotweets/"
+  },
+  {
+    "from": "/blog/twitterstreamspythonmysql",
+    "to": "/archive/twitterstreamspythonmysql/"
+  },
+  {
+    "from": "/blog/ufc189animation",
+    "to": "/archive/ufc189animation/"
+  }
+]

@@ -1,0 +1,35 @@
+---
+layout: base.njk
+---
+<article class="card">
+  {% if tags | hasTag("archive") %}
+    {% include "partials/archive-banner.njk" %}
+  {% endif %}
+  <p class="meta">{{ date | dateReadable }}</p>
+  <h1>{{ title }}</h1>
+  {{ content | safe }}
+  {% if tags %}
+    <div class="tag-grid">
+      {% for tag in tags %}
+        {% if tag != "post" and tag != "archive" %}
+          <a class="tag-pill" href="/tags/{{ tag | tagSlug }}/">{{ tag }}</a>
+        {% endif %}
+      {% endfor %}
+    </div>
+  {% endif %}
+  {% if tags | hasTag("archive") %}
+    <script>
+      window.MathJax = {
+        tex: {
+          inlineMath: [["$", "$"], ["\\(", "\\)"]],
+          displayMath: [["$$", "$$"], ["\\[", "\\]"]],
+          processEscapes: true
+        },
+        options: {
+          skipHtmlTags: ["script", "noscript", "style", "textarea", "pre", "code"]
+        }
+      };
+    </script>
+    <script defer src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
+  {% endif %}
+</article>
