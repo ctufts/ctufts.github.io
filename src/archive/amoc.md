@@ -156,5 +156,4 @@ Below are links to the paper by Fawcett and Provost as well as tutorial slides o
 <hr>
 <sup>1</sup>T. Fawcett and F. Provost, “Activity monitoring: Noticing interesting changes in behavior,” Proc. fifth ACM SIGKDD Int. Conf. Knowl. Discov. data Min., vol. 1, no. 212, pp. 53–62, 1999. 
 
-[jekyll-gh]: https://github.com/jekyll/jekyll
-[jekyll]:    http://jekyllrb.com
+

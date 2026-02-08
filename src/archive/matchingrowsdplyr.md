@@ -43,5 +43,4 @@ I want to find all the rows of <i>sleep.A</i> not present in <i>sleep.B</i> base
 
 
 
-[jekyll-gh]: https://github.com/jekyll/jekyll
-[jekyll]:    http://jekyllrb.com
+

@@ -302,5 +302,4 @@ If you are interested in further reading into overpowered studies checkout
 [The Power of “P”: On Overpowered Clinical Trials and “Positive” Results by Howard S. Hochster, MD](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2630828/pdf/gcr2_2p0108.pdf)
 
 
-[jekyll-gh]: https://github.com/jekyll/jekyll
-[jekyll]:    http://jekyllrb.com
+

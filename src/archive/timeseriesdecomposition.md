@@ -140,5 +140,4 @@ Time series decomposition using moving averages is a fast way to view seasonal a
 
 
 
-[jekyll-gh]: https://github.com/jekyll/jekyll
-[jekyll]:    http://jekyllrb.com
+

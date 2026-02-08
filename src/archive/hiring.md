@@ -58,5 +58,4 @@ To clarify, this would be the interview after all technical interviews/projects 
 This post was based on my search and my work/life situation during my search.  I'm sure people will see some of this differently as we all have different expectations as employers and applicants.  My main point here is that if you want to be able to hire talented people don't create situations which filter them from your hiring pool or hinder their ability to display their strengths. 
  
 
-[jekyll-gh]: https://github.com/jekyll/jekyll
-[jekyll]:    http://jekyllrb.com
+

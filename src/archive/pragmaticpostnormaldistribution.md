@@ -397,5 +397,4 @@ var numDataPoints = 1000;
        }
 </script>
 
-[jekyll-gh]: https://github.com/jekyll/jekyll
-[jekyll]:    http://jekyllrb.com
+

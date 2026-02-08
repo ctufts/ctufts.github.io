@@ -164,5 +164,4 @@ ggplot(df_scatter, aes(x = x, y = y)) + geom_point()
 
 ![R Scatter Plot](/images/pragmatic_stats_eda/scatter_plot.svg)
 
-[jekyll-gh]: https://github.com/jekyll/jekyll
-[jekyll]:    http://jekyllrb.com
+

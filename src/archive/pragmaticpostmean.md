@@ -96,5 +96,4 @@ we might think differently ....
 [1] 2.5
 ```
 
-[jekyll-gh]: https://github.com/jekyll/jekyll
-[jekyll]:    http://jekyllrb.com
+

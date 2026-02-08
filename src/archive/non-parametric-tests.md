@@ -452,5 +452,4 @@ The table above contains the results from the tests performed on the sample data
 * [JHU Notes](http://ocw.jhsph.edu/courses/methodsinbiostatisticsii/PDFs/lecture26.pdf)
 * [Permutation Test - UW](http://faculty.washington.edu/kenrice/sisg/SISG-08-06.pdf)
 
-[jekyll-gh]: https://github.com/jekyll/jekyll
-[jekyll]:    http://jekyllrb.com
+

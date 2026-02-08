@@ -56,5 +56,4 @@ The FSelector package offers several functions to choose the best features using
 <sup>1</sup>Rousseauw, J., du Plessis, J., Benade, A., Jordaan, P., Kotze, J. and Ferreira, J. (1983). Coronary
 risk factor screening in three rural communities, South African Medical Journal 64: 430–436.
 
-[jekyll-gh]: https://github.com/jekyll/jekyll
-[jekyll]:    http://jekyllrb.com
+

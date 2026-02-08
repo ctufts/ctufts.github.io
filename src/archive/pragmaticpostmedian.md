@@ -69,5 +69,4 @@ of centrality like mean and measures of variation such as standard deviation and
 [1] 87
 ```
 
-[jekyll-gh]: https://github.com/jekyll/jekyll
-[jekyll]:    http://jekyllrb.com
+

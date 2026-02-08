@@ -119,5 +119,4 @@ print(sample_stdev)
 [1] 0.7888106
 ```
 
-[jekyll-gh]: https://github.com/jekyll/jekyll
-[jekyll]:    http://jekyllrb.com
+

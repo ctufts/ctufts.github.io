@@ -94,5 +94,4 @@ Hopefully this post will save you a few minutes if you run into any issues while
 * [Git Issues](https://github.com/RaRe-Technologies/gensim/issues)
 * [Gensim Twitter](https://twitter.com/gensim_py)
 
-[jekyll-gh]: https://github.com/jekyll/jekyll
-[jekyll]:    http://jekyllrb.com
+

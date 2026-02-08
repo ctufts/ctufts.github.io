@@ -141,5 +141,4 @@ Additional References/Notes:
 3. [IMDB - Clay Davis Quotes](http://www.imdb.com/character/ch0337428/quotes).
 
 
-[jekyll-gh]: https://github.com/jekyll/jekyll
-[jekyll]:    http://jekyllrb.com
+

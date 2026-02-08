@@ -118,5 +118,4 @@ print(sample_var)
 [1] 0.6222222
 ```
 
-[jekyll-gh]: https://github.com/jekyll/jekyll
-[jekyll]:    http://jekyllrb.com
+

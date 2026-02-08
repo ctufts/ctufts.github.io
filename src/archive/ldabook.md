@@ -17,5 +17,4 @@ work in my day to day. One of the methods I often use for dimensionality reducti
 In an effort to gain a deeper understanding of all the moving parts of LDA, I started writing a short gitbook focused on LDA and Gibbs Sampling. You can check it out at [ldabook.com](https://ldabook.com). Feel free to contact me via with comments or suggestions.
 
 
-[jekyll-gh]: https://github.com/jekyll/jekyll
-[jekyll]:    http://jekyllrb.com
+

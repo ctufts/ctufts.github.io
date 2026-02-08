@@ -168,5 +168,4 @@ the justification of bootstrapping and why it won't improve point estimates
 relative variation (the confidence intervals) see the [Bootstrap Confidence Intervals MIT course reading.](https://ocw.mit.edu/courses/mathematics/18-05-introduction-to-probability-and-statistics-spring-2014/readings/MIT18_05S14_Reading24.pdf)  
 
 
-[jekyll-gh]: https://github.com/jekyll/jekyll
-[jekyll]:    http://jekyllrb.com
+
